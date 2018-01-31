@@ -1,17 +1,17 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// 'pennyCoin' token contract
 //
-// Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
+// Deployed to : 0x204Ab47fD82dEA4037F09e4dC013bd8733DD5238
+// Symbol      : PENY
+// Name        : pennyCoin
 // Total supply: 100000000
-// Decimals    : 18
+// Decimals    : 0
 //
 // Enjoy.
 //
-// (c) by Moritz Neto with BokkyPooBah / Bok Consulting Pty Ltd Au 2017. The MIT Licence.
+// (c) by Mr. Nakamotor
 // ----------------------------------------------------------------------------
 
 
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
+contract pennyCoin is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -112,13 +112,13 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function FucksToken() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
-        decimals = 18;
-        _totalSupply = 100000000000000000000000000;
-        balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
-        Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
+    function pennyCoin() public {
+        symbol = "PENY";
+        name = "pennyCoin";
+        decimals = 0;
+        _totalSupply = 100000000;
+        balances[0x204Ab47fD82dEA4037F09e4dC013bd8733DD5238] = _totalSupply;
+        Transfer(address(0), 0x204Ab47fD82dEA4037F09e4dC013bd8733DD5238, _totalSupply);
     }
 
 
